@@ -3,6 +3,8 @@ package com.scxh.java1601.syntax.test;
 public class TestOne {
 
 	public static void main(String[] args) {
+		System.out.println("调用方法开始");
+		
 		primeNumber();
 		
 		printStar();
@@ -10,6 +12,8 @@ public class TestOne {
 		printDiamod();
 		
 		printFlow();
+		
+		System.out.println("调用方法结束");
 	}
 
 	/**
@@ -19,7 +23,7 @@ public class TestOne {
 	 * 分析: number % xx == 0 ;  4 % 1 , 4 % 2 , 4 % 3 , 4 % 4 , 4 % 5
 	 */
 	public static void primeNumber() {
-		for (int i = 2; i <= 100; i++) {
+		for (int i = 2; i <= 5; i++) {
 			int number = i;
             boolean flag = true; //true表示是质数， false 不是质数
             

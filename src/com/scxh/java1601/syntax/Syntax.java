@@ -67,7 +67,8 @@ package com.scxh.java1601.syntax;
 public class Syntax {
 
 	public static void main(String[] args) {
-		ifSyntax();
+//		ifSyntax();
+		whileSyntax();
 	}
 	/**
 	 * if条件语句
@@ -150,6 +151,7 @@ public class Syntax {
      * while循环语句
      */
     public static void whileSyntax(){
+    	
     	int i = 0;
 		boolean flag = true;
 		while (flag) {

@@ -9,13 +9,14 @@ import java.util.Scanner;
 public class PractiseOne {
 
 	public static void main(String[] args) {
-		maxOne();
+		double max = maxOne();
+		System.out.println("最大值是 :" + max);
 	}
 
 	/**
 	 * 最大值例1
 	 */
-	public static void maxOne() {
+	public static double maxOne() {
 		double a = 30.03;
 		int b = 40;
 		double max; // 放最大值
@@ -25,7 +26,8 @@ public class PractiseOne {
 		} else {
 			max = b;
 		}
-		System.out.println("最大值是 :" + max);
+		return max;
+		
 	}
 
 	/**
