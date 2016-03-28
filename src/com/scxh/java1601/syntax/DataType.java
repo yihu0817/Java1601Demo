@@ -38,8 +38,10 @@ package com.scxh.java1601.syntax;
 public class DataType {
 
 	public static void main(String[] args) {
-		intSyntax();
-		floatSyntax();
+//		intSyntax();
+//		floatSyntax();
+		
+		charSyntax();
 	}
 	
 	/**
@@ -86,7 +88,12 @@ public class DataType {
 		char webName2 = '客';
 		char webName3 = '之';
 		char webName4 = '家';
+		
+		String webName = "极客之家"; //定义字符串类型 webName 值为"极客之家"
+		
 		System.out.println("网站的名字是：" + webName1 + webName2 + webName3 + webName4);
+		
+		System.out.println(webName);
 	}
 	/**
 	 * 布尔型变量声明与赋值

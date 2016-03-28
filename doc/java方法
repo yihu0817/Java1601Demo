@@ -1,0 +1,54 @@
+
+public static void main(String args[]){
+           //方法体
+}
+
+方法: 1.定义
+     2.书写方式
+     
+     访问修饰符  [static] 返回值类型   方法名称 (参数列表){
+             方法体
+  }
+     
+       访问修饰符: public   private   protected    默认  
+       返回值类型: void (没有返回值)   (有返回值) return 值;
+       方法名称:   标识符
+       参数列表:   (参数类型 1 参数名1,参数类型 2 参数名2)
+        方法体:    大括号 
+   
+   注:  有static 修饰的方法为类方法
+              无static 修饰的方法叫对象方法
+      
+      类方法
+      对象方法        
+
+
+方法类型: 
+
+1.无返回值无参
+public void max(){
+     //方法体
+}
+
+2.无返值有参
+public void max(int a, int b){
+	//方法体
+}
+
+3.有返回值无参
+public int max(){
+   int max = 23;
+   //方法体
+   return max;
+}
+4.有返回值有参
+public int max(int a,int b){
+    int max = a;
+    if(max < b){
+       max = b;
+    }
+    return max;
+}
+
+
+          

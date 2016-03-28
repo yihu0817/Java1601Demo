@@ -1,0 +1,43 @@
+
+一、编写一个字符串功能类StringFunction 有如下方法(编写一个类，类的名称是StringFunction，类的功能是对字符串进行操作)
+  
+    方法1：public static int getWordNumber(String s)  
+         参数是一个英文句子，方法的功能是取得此英文句子的单词个数。
+        例如 s:The length of str is twelve" 
+       
+   方法2：public static int getWordShowNumber(String s1,String s2) 
+         此方法传递2个String参数，返回s1中出现s2的次数。
+         例如:s1: The length of str is twelve" 
+    s2: String
+     
+    方法3：public boolean contain(String s1, String s2)
+         判断S1中是否含有S2
+
+    方法4：编写main方法，对此类进行测试
+
+    选做: 编写测试主类Test, 对StringFunction类进行测试。
+
+=========================================
+
+ 二、编写一个类 MethodFunction 有如下方法:   
+
+        方法1：  public static int max(int a,int b)
+                      返回两个数 a ,b 最大值
+    
+        方法2: public static void print(String msg)
+                       要求控制台输出 msg 内容  
+                       
+       方法3: public static String getScore()
+                    控制台 输入百分成绩，输出成绩等级，成绩>=90 输出A, 80<=成绩<90输出B, 70<=成绩<80输出C , 成绩<70输出D。
+
+       方法4： public static void sumHun()
+                     求 1+2+3+4+5+....99+100的和
+   
+       方法5: public void getFlow(int flowData)
+                     计算输入的三位数flowData是否是水仙花数
+		  水仙花数的定义：水仙花数是三位数，它的个、十、百位数字的立方的和等于该数本身， 例如：371=27+343+1
+                     
+       方法5:public static void main(String ars[])
+                  编写main方法对此类所有方法进行测试
+                       
+      选做: 编写测试主类Test, 对MethodFunction类进行测试。

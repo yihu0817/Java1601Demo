@@ -98,10 +98,7 @@ public class TestOne {
 		 n:4
 		 n:midle      
 		             i    2*(midle -i) + 1 
-		      
-		           
-		      
-		               
+    
 	 */
 	public static void printDiamod(){
 		int n = 10;
