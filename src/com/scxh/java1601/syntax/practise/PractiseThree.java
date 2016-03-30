@@ -9,21 +9,27 @@ public class PractiseThree {
 //		getStudentNumberByScore();
 //		getStudentNumberByScoreTwo();
 		
-		int[] scores;
-		scores = getData();
-		for(int i = 0; i < scores.length; i++){
-			System.out.print(scores[i] + " ");
-		}
-		
-		int avg = getAverage(scores);
-		System.out.println("平均值是 :"+avg);
 		
 		
-		int[] greaterAvgs = getGreaterData(scores,avg);
-		System.out.print("大于平均值的数有 :");
-		for(int i = 0; i < greaterAvgs.length; i++){
-			System.out.print(greaterAvgs[i] + " ");
-		}
+//		int[] scores;
+//		scores = getData();
+//		for(int i = 0; i < scores.length; i++){
+//			System.out.print(scores[i] + " ");
+//		}
+//		
+//		int avg = getAverage(scores);
+//		System.out.println("平均值是 :"+avg);
+//		
+//		
+//		int[] greaterAvgs = getGreaterData(scores,avg);
+//		System.out.print("大于平均值的数有 :");
+//		for(int i = 0; i < greaterAvgs.length; i++){
+//			System.out.print(greaterAvgs[i] + " ");
+//		}
+		
+		int[] a = {79,97,68,77,89,84,62};
+		
+		printMaxMin(a);
 	}
 	/**
 	 * 返回从键盘输入的10个整数
@@ -204,4 +210,32 @@ public class PractiseThree {
 		}
 		
 	}
+	/**
+	 * 编写一个方法printMaxMin(int[] arrays)：
+     	打印出数组a中的最大值和最小值,数组a中至少有5个元素。
+	 */
+	public static void printMaxMin(int[] arrays){
+		int length = arrays.length;
+		int max = arrays[0];
+		for(int i = 1; i < length; i++){
+			if(arrays[i] > max){
+				max = arrays[i];
+			}
+		}
+		System.out.println("最大值 ："+max);
+		
+		int min = arrays[0];
+		for(int i = 0; i < length; i++){
+			if(arrays[i] < min){
+				min = arrays[i];
+			}
+		}
+		System.out.println("最小值 ："+min);
+	}
+	
+	/**
+	 * 
+	 * {79,97,68,77,89,84,62};
+	 *  由大到小输出
+	 */
 }
