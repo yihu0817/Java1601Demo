@@ -15,7 +15,25 @@ public class TestOne {
 		
 		System.out.println("调用方法结束");
 	}
+	/**
+	 * 打印累加结果信息 a + aa + aaa + ... + aa..aa = sum
+	 */
+	public static void printMessage() {
+		int sum = 1000;
+		int n = 8;
+		int a = 3;
+		int it = 0;
+		for (int j = 1; j <= n; j++) {
+			it = it * 10 + a;
+			System.out.print(it);
 
+			if (j != n)
+				System.out.print("+");
+
+		}
+
+		System.out.print(" = " + sum);
+	}
 	/**
 	 * 求100以内的质数(素数) 
 	 * 质数的定义：只能被1或自身整除的数 <=> 除了1和自身外还可以被其它数整除的数不是质数

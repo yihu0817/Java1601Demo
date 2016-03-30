@@ -1,4 +1,4 @@
-package com.scxh.java1601.syntax.test;
+package com.scxh.java1601.syntax.practise;
 
 import java.util.Scanner;
 
@@ -14,10 +14,10 @@ public class PractiseOne {
 	}
 
 	/**
-	 * 最大值例1
+	 * 求 两个数 30.30 和 40 的最大值?
 	 */
 	public static double maxOne() {
-		double a = 30.03;
+		double a = 30.30;
 		int b = 40;
 		double max; // 放最大值
 
@@ -35,7 +35,7 @@ public class PractiseOne {
 	 */
 
 	public static void maxTwo() {
-		double a = 30.03;
+		double a = 30.30;
 		int b = 40;
 		double max = a;
 
@@ -52,7 +52,7 @@ public class PractiseOne {
 	 */
 
 	public static void leapYear() {
-		int year = 2006;
+		int year = 1998;
 
 		if (((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0)) {
 
@@ -262,5 +262,33 @@ public class PractiseOne {
 
 			System.out.println(sum);
 		}
+	}
+	
+	/**
+	 * 定义方法 求 1+2+3+4+5+....99+100的和
+	 */
+	public static void sumOne() {
+		int sum = 0; // 总和
+		int item = 0; // 某一项值
+		for (int i = 1; i <= 100; i++) {
+			item = item + 1;
+			sum = sum + item;
+		}
+		System.out.println("1+2+3+4+5+....99+100的和是 :" + sum);
+	}
+
+	/**
+	 * 求 1-1/2+1/3-1/4 + ....+1/99-1/100 的和
+	 */
+	public static void sumTwo() {
+		int sum = 0; // 总和
+		int item = 0; // 某一项值
+		int q = -1;
+		for (int i = 1; i <= 100; i++) {
+			q = -q;
+			item = q / (item + 1);
+			sum = sum + item;
+		}
+		System.out.println("1-1/2 +1/3-1/4 + ....+1/99-1/100的和是 :" + sum);
 	}
 }

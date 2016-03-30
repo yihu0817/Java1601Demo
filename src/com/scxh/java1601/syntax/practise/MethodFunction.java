@@ -1,4 +1,4 @@
-package com.scxh.java1601.syntax.test;
+package com.scxh.java1601.syntax.practise;
 
 import java.util.Scanner;
 

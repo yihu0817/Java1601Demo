@@ -1,4 +1,4 @@
-package com.scxh.java1601.syntax.test;
+package com.scxh.java1601.syntax.practise;
 
 /**
  * 方法定义: 
