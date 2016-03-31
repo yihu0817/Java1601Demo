@@ -9,8 +9,9 @@ import java.util.Scanner;
 public class PractiseOne {
 
 	public static void main(String[] args) {
-		double max = maxOne();
-		System.out.println("最大值是 :" + max);
+//		double max = maxOne();
+//		System.out.println("最大值是 :" + max);
+		fib();
 	}
 
 	/**
@@ -236,7 +237,7 @@ public class PractiseOne {
 	/**
 	 * 斐波纳契数列。前两个数都是1，第三个数是前两个数之和，以后的每个数都是其前两个数之和。
 	 * 
-	 * 1 1 2 3 5 8 ....... f1 f2 f3 f4 f5 f6 f100
+	 * 1 1 2 3 5 8 .......  f1 f2 f3 f4 f5 f6 ..f10
 	 * 
 	 * f1 = f2 = 1;
 	 * 
@@ -253,16 +254,31 @@ public class PractiseOne {
 
 		int i = 2;
 		int n = 10;
-		while (i <= n) {
+//		while (i <= n) {
+//			first = second;
+//			second = sum;
+//			sum = first + second;
+//
+//			++i;
+//
+//			System.out.println(sum);
+//		}
+		
+		int k = 0;
+		for(int j = 2; j <= n; j++){
 			first = second;
 			second = sum;
 			sum = first + second;
-
-			++i;
-
-			System.out.println(sum);
+			
+			
+			System.out.print(sum + "\t");
+			if((++k) % 4 == 0){
+				System.out.println();
+			}
+			
 		}
 	}
+
 	
 	/**
 	 * 定义方法 求 1+2+3+4+5+....99+100的和
