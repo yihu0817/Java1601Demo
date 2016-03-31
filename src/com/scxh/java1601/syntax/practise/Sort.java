@@ -3,21 +3,117 @@ package com.scxh.java1601.syntax.practise;
 public class Sort {
 
 	public static void main(String[] args) {
-		int[] oldArrays = {79, 97, 68, 77, 89};
-		println("排序前: ",oldArrays);
+//		int[] oldArrays = {79, 97, 68, 77, 89};
+//		println("排序前: ",oldArrays);
+//		
+//		int[] newArrays = sortData(oldArrays);
+//
+//		println("排序后: ",newArrays);
 		
-		int[] newArrays = sortData(oldArrays);
-
-		println("排序后: ",newArrays);
+		
+//		sortOne();
+		
+		sortTwo();
 	}
 	
+	
+	
+	
+	/**
+	 *   冒泡排序  冒泡数据往上冒
+	 *     
+	 *   int[] a = {89,98,78,68,76}  - > {68,76,78,89,98}  
+	 *   
+                    第一次冒泡：
+                   n           n-1             n           n-1              
+                         .................
+                 基本思想:    第五个数据与第四个数比较，若第五个数小于第四个数则交换位置，   {89,98,78,68,76}
+		                         第四个数据与第三个数比较，若第四个数小于第三个数则交换位置       {89,98,68,78,76}
+		                         三                      二                            三    <     二                 		{89,68,98,78,76}
+		                         二                      一                            二                  一              		{68,89,98,78,76}
+		                         
+	    
+	 */
+	public static void sortOne(){
+		int[] a = {89,98,78,68,76};
+		
+		for(int j = 0; j < a.length-1; j++){
+			
+			for(int i = a.length-1; i > j; i--){     // i=4,3
+		          if(a[i] < a[i-1]){                //a[4] < a[3]   a[3]<a[2]
+		             int temp = a[i];
+		             a[i] = a[i-1];
+		             a[i-1] = temp;
+		          }
+		          
+			}
+			
+			println(j,a);
+		}
+	}
+	/**
+	 * 冒泡数据往下沉
+	 * 
+	 * {89,98,78,68,76}  - > {68,76,78,89,98}  
+      
+           第一次冒泡：
+	     第一个数与第  二 个数比较，若第 一个数大于 第 二个数则交换位置       {89,98,78,68,76}
+	        二        		三             		 二      >     三                  		  {89,78,98,68,76}
+	        三        		四             		 三      >     四                    		  {89,78,68,98,76}
+	        四       		 五             		 四      >     五                    		  {89,78,68,76,98}
+	        
+	  第二次冒泡：
+	  
+	  ......
+	  
+	  第n-1次冒泡：
+	  
+	 */
+	public static void sortTwo(){
+		
+		int[] a = {89,98,78,68,76};
+		
+		for(int j = 0; j < a.length-1; j++){
+			for(int i = 0; i< a.length-1 - j; i++){
+				if(a[i] > a[i+1]){
+					swap(a,i,i+1);
+				}
+				
+			}
+			println(j,a);
+		}
+	}
+	
+	
+	/**
+	 * 交互数组a，x和y位置数据
+	 * @param a
+	 * @param x
+	 * @param y
+	 */
+	public static void swap(int[] a, int x, int y){
+        int temp = a[x];
+        a[x] = a[y];
+        a[y] = temp;
+	}
+	
+	/**
+	 * 交换数组相邻数据
+	 * @param a
+	 * @param k
+	 */
+	public static void swap(int[] a,int k){
+		int temp = a[k];
+		a[k] = a[k+1];
+		a[k+1] = temp;
+	}
 	
     /**
      * 数据交换
      * 分析：
      *   {89,78} -> {78,89}
      */
-	public void switchData(){
+	public void swap(){
 		 int[] a = new int[2]; 
 		 a[0] = 89; 
 		 a[1] = 79;
@@ -27,42 +123,8 @@ public class Sort {
 		 a[1] = min;
 		 
 	}
-	/**
-	 * 冒泡排序
-	 * （1）基本思想：在要排序的一组数中，对当前还未排好序的范围内的全部数，自上而下对相邻的两个数依次进行比较和调整，
-	 * 让较大的数往下沉，较小的往上冒。即：每当两相邻的数比较后发现它们的排序与排序要求相反时，就将它们互换。
-	 * 按由小到到输出下列数据:{79,97,68,77,89,84,62}
-	 * 
-	 * 
-	 * @param arrays
-	 * @return
-	 */
-	public static int[] sortData(int[] arrays) {
-		int length = arrays.length;
+	
 
-		for (int i = 0; i < length - 1; i++) {
-
-			for (int j = 0; j < length - i - 1; j++) {
-
-				if (arrays[j] > arrays[j + 1]) {
-					switchs(arrays,j);
-				}
-
-			}
-		}
-		return arrays;
-	}
-
-	/**
-	 * 交换数组数据
-	 * @param a
-	 * @param k
-	 */
-	public static void switchs(int[] a,int k){
-		int temp = a[k];
-		a[k] = a[k+1];
-		a[k+1] = temp;
-	}
 	
 	/**
 	 * 3.简单选择排序
