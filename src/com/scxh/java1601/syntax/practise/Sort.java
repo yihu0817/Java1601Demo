@@ -1,5 +1,7 @@
 package com.scxh.java1601.syntax.practise;
 
+import java.util.Arrays;
+
 public class Sort {
 
 	public static void main(String[] args) {
@@ -13,10 +15,20 @@ public class Sort {
 		
 //		sortOne();
 		
-		sortTwo();
+//		sortTwo();
+		
+		sortArrays();
 	}
 	
-	
+	public static void sortArrays(){
+		int[] a = {89,98,78,68,76};
+		println("排序前: ", a);
+		
+		Arrays.sort(a); 
+		
+		println("排序后: ", a);
+		
+	}
 	
 	/**
 	 *   冒泡排序  冒泡数据往上冒
@@ -56,7 +68,7 @@ public class Sort {
 	 * {89,98,78,68,76}  - > {68,76,78,89,98}  
       
            第一次冒泡：
-	     第一个数与第  二 个数比较，若第 一个数大于 第 二个数则交换位置       {89,98,78,68,76}
+	     第一个数与第  二 个数比较，若第 一个数大于 第 二个数则交换位置        {89,98,78,68,76}
 	        二        		三             		 二      >     三                  		  {89,78,98,68,76}
 	        三        		四             		 三      >     四                    		  {89,78,68,98,76}
 	        四       		 五             		 四      >     五                    		  {89,78,68,76,98}

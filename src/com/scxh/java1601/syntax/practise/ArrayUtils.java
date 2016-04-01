@@ -1,6 +1,6 @@
 package com.scxh.java1601.syntax.practise;
 
-public class Arrays {
+public class ArrayUtils {
 
 	public static void main(String[] args) {
 //		showSum();
