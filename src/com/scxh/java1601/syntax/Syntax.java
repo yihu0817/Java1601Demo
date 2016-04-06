@@ -68,7 +68,8 @@ public class Syntax {
 
 	public static void main(String[] args) {
 //		ifSyntax();
-		whileSyntax();
+//		whileSyntax();
+		forEachSyntax();
 	}
 	/**
 	 * if条件语句
@@ -134,13 +135,13 @@ public class Syntax {
 		switch(a){
 		case 1 :
 			System.out.println("分支1语句块");
-			
+			break;
 		case 2 :
 			System.out.println("分支2语句块");
-		
+			break;
 		case 3 :
 			System.out.println("分支3语句块");
-			
+			break;
 		default :
 			System.out.println("default语句块");
 		}
@@ -196,6 +197,27 @@ public class Syntax {
             }
 		}
 		System.out.println("sum:" + sum);  //21
+    }
+    /**
+     * foreach循环
+     */
+    public static void forEachSyntax(){
+    	int[] arrays = {67,54,89,76,88};
+    	
+    	System.out.println("======for语句===============");
+    	int length = arrays.length;
+    	for(int i = 0; i < length; i++){
+    		System.out.print(arrays[i] + " ");
+    	}
+    	System.out.println();//换行
+    	
+    	System.out.println("======foreach语句===========");
+    	for(int item : arrays){
+    		System.out.print(item + " ");
+    	}
+    	
+    	
+    	
     }
     /**
      * 跳转语句 continue break 

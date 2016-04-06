@@ -1,11 +1,12 @@
 package com.scxh.java1601.syntax;
 
 public class MethodOne {
-
+    
 	public static void main(String[] args) {
 		MethodOne medthodOne = new MethodOne();
 		medthodOne.print();
-
+		
+		
 		int abc = 12;
 		
 		String ab = "极客之家1";

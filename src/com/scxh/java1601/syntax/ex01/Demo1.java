@@ -1,5 +1,11 @@
 package com.scxh.java1601.syntax.ex01;
 
+/**
+ * 方法传参问题，
+ *   方法传递的是参数值而不是引用
+ * @author Administrator
+ *
+ */
 public class Demo1 {
 
 	public static void main(String[] args) {

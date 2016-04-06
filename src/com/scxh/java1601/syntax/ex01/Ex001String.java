@@ -21,16 +21,29 @@ package com.scxh.java1601.syntax.ex01;
 public class Ex001String {
 
 	public static void main(String[] args) {
-		String str = "www.warmtel.com!";
+//		String str = "www.warmtel.com!";
+//		
+//		Ex001String ex001 = new Ex001String();
+//		boolean flag = ex001.startWiths(str, "www");
+//		System.out.println(flag);
+//
+//		int index = ex001.indexOfs(str, "war");
+//		System.out.println(index);
 		
-		Ex001String ex001 = new Ex001String();
-		boolean flag = ex001.startWiths(str, "www");
-		System.out.println(flag);
-
-		int index = ex001.indexOfs(str, "war");
-		System.out.println(index);
+		stringChar();
 	}
 
+	public static void stringChar(){
+		String str = "hello";
+		
+		char[] cs = {'h','e','l','l','o'};
+		
+		System.out.println("string :"+str);
+		
+		for(char c : cs)
+			System.out.print(c);
+	}
+	
 	public boolean endsWiths(String s, String over) {
 		boolean end = s.endsWith(over);
 		return end;
