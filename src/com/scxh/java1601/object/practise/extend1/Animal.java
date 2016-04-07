@@ -1,7 +1,7 @@
 package com.scxh.java1601.object.practise.extend1;
 
 /**
- * this 关键字用来表示当前对象本身，或当前类的一个实例，通过this 可以调用本对象的所有方法和属性。
+ * this 关键字用来表示当前类对象本身，或当前类的一个实例，通过this 可以调用本对象的所有方法和属性。
  */
 public class Animal {
 	String name;

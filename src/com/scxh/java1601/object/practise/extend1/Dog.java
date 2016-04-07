@@ -11,9 +11,10 @@ package com.scxh.java1601.object.practise.extend1;
  * 
  */
 public class Dog extends Animal {
-
+	public String color;
+	public String name;
 	public Dog(String name) {
-		super(name); // 调用父类构造方法 ; 可以在子类中通过super关键字调用父类构造方法
+		super(name); // 作为方法名表示 父类构造方法 ;
 	}
 
 	// 覆盖say() 方法
@@ -24,6 +25,14 @@ public class Dog extends Animal {
 	//重载say()方法
 	public void say(String msg){
 		System.out.println("我是一只小狗，我的名字叫" + name + "，我会发出汪汪的叫声"+msg);
+	}
+	
+	public void call(){
+		this.color = "红色";
+		this.name = "小红";
+		this.say();
+		super.name = "大红";
+		super.say();
 	}
 
 }
