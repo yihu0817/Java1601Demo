@@ -17,7 +17,6 @@ public class TestObjectMethod {
 			System.out.println("t1 与t2 是同一个对象");
 		} else {
 			System.out.println("t1 与t2 不 是同一个对象");
-
 		}
 
 		int a = 2;

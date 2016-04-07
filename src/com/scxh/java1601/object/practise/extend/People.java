@@ -8,6 +8,7 @@ public class People{
 	public int age;// 年龄
 	public float height;// 身高
 
+	
 	/**
 	 * 说话
 	 */
