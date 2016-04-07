@@ -10,12 +10,26 @@ public class Test {
 
 	public static void main(String[] args) {
 		Test test = new Test();
-
+		
 		Student[] studentArray = test.saveStudentToArray(2);
 
 		test.showStudentsMsg(studentArray);
 	}
 
+	public void array(){
+		float [][] f = new float[2][];
+		
+		int[][] k = {{},{}};
+		
+		for(int i = 0; i < f.length; i++){
+			for(int j = 0; j < f[i].length; j++){
+				f[i][j] = i+j;
+				System.out.println(f[i][j]);
+			}
+		}
+		
+	}
+	
 	/**
 	 * 从键盘录入学生信息构造学生对象保存到数组中
 	 * 
