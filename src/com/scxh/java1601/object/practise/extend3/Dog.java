@@ -5,7 +5,7 @@ package com.scxh.java1601.object.practise.extend3;
  *
  */
 public class Dog extends Animal {
-	public String name;
+	public String name = "dog";
 	public Dog() {
 		super("大黄");
 		this.name = "小黄";

@@ -14,6 +14,7 @@ public class Test {
 		Student[] studentArray = test.saveStudentToArray(2);
 
 		test.showStudentsMsg(studentArray);
+		
 	}
 
 	public void array(){
@@ -68,13 +69,18 @@ public class Test {
 		System.out.println("姓名\t年龄\t 编号\t性别");
 		int length = studentArrays.length;
 		for (int i = 0; i < length; i++) {
+			
 			Student student = studentArrays[i];
-			String names = student.name;
-			int ages = student.age;
-			int ids = student.id;
-			String sexs = student.sex;
+			
+//			String names = student.name;
+//			int ages = student.age;
+//			int ids = student.id;
+//			String sexs = student.sex;
 
-			System.out.println(names + "\t" + ages + "\t" + ids + "\t" + sexs);
+			System.out.println(student);
+			
+			
+//			System.out.println(names + "\t" + ages + "\t" + ids + "\t" + sexs);
 		}
 
 	}
@@ -149,8 +155,10 @@ public class Test {
 			int ids = student.id;
 			String sexs = student.sex;
 
-			System.out.println("第" + (i + 1) + "个学生姓名是" + names + ",年龄是" + ages
-					+ "岁," + "编号为" + ids + ",性别是" + sexs);
+//			System.out.println("第" + (i + 1) + "个学生姓名是" + names + ",年龄是" + ages
+//					+ "岁," + "编号为" + ids + ",性别是" + sexs);
+			
+			System.out.println(student);
 		}
 
 	}
