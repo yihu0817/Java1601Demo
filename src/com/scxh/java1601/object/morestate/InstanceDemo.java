@@ -1,4 +1,4 @@
-package com.scxh.java1601.object.practise.morestate;
+package com.scxh.java1601.object.morestate;
 
 /**
  * 多态性带来了一个问题，就是如何判断一个变量所实际引用的对象的类型 。Java 使用 instanceof 操作符。 instanceof

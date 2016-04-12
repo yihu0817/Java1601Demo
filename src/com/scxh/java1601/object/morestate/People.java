@@ -1,4 +1,4 @@
-package com.scxh.java1601.object.practise.morestate;
+package com.scxh.java1601.object.morestate;
 
 public class People {
 	void say() {

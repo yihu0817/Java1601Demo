@@ -1,4 +1,4 @@
-package com.scxh.java1601.object.practise.morestate;
+package com.scxh.java1601.object.morestate;
 /**
  * obj 既可以是人类，也可以是教师，它有不同的表现形式，这就被称为多态。多态是指一个事物有不同的表现形式或形态。
         多态存在的三个必要条件：要有继承、要有重写(覆盖)、父类变量引用子类对象。

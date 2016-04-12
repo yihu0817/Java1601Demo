@@ -1,15 +1,17 @@
-package com.scxh.java1601.object;
+package com.scxh.java1601.object.test1;
 
 import java.util.Scanner;
+
+import com.scxh.java1601.object.Employee;
 
 /**
  * 二、用数组存储3个学生对象，要求从键盘输入学生信息,控制台显示所有学生信息。
  *
  */
-public class Test {
+public class TestStudent {
 
 	public static void main(String[] args) {
-		Test test = new Test();
+		TestStudent test = new TestStudent();
 		
 		Student[] studentArray = test.saveStudentToArray(2);
 

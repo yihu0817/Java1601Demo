@@ -18,7 +18,7 @@ package com.scxh.java1601.object;
  */
 public class Employee {
 	public String name; //姓名
-	int age;   //年龄
+	public int age;   //年龄
 	private float salar; //薪资
 
 	public Employee(){

@@ -1,5 +1,4 @@
 package com.scxh.java1601.object.practise.extend1;
-
 public class Test {
 
 	public static void main(String[] args) {

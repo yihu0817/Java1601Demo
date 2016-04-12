@@ -1,6 +1,5 @@
 package com.scxh.java1601.object.practise;
 
-import com.scxh.java1601.object.Employee;
 
 
 public class Test {

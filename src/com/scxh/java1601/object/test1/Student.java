@@ -1,4 +1,4 @@
-package com.scxh.java1601.object;
+package com.scxh.java1601.object.test1;
 
 public class Student {
 	 String name; // 姓名
