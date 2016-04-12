@@ -9,7 +9,7 @@ public class TestObjectMethod {
 
 	public static void main(String[] args) {
 		Mobile mobile1 = new Mobile();
-		mobile1.name = "苹果手机";
+		mobile1.name = "三星手机";
 
 		Mobile mobile2 = new Mobile();
 		mobile2.name = "三星手机";
