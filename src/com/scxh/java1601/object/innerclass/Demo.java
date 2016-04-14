@@ -10,8 +10,8 @@ package com.scxh.java1601.object.innerclass;
 public class Demo {
 
 	public static void main(String[] args) {
-//		Person p = new Child();
-//		p.eat();
+		Person p = new Child();
+		p.eat();
 		
 		Person p1 = new Person() {
 			@Override
