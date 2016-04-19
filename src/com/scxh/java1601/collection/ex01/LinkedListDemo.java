@@ -8,7 +8,6 @@ public class LinkedListDemo {
 
 	public static void main(String[] args) {
 		LinkedList<Student> listQueque = new LinkedList<Student>();
-
 		Student studentA = new Student("张三", 23, 111, "男");
 		Student studentB = new Student("李四", 24, 222, "男");
 		Student studentC = new Student("王二", 25, 333, "女");

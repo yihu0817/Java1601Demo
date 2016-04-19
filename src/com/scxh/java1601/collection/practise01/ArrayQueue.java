@@ -38,7 +38,6 @@ public class ArrayQueue {
 	public void add(Student stu){
 		if(++i < students.length){
 			students[i] = stu;
-			
 			System.out.println("添加"+i);
 		}else{
 			System.out.println("队列已满");

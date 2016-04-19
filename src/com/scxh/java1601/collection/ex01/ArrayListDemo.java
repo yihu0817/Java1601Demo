@@ -8,6 +8,7 @@ package com.scxh.java1601.collection.ex01;
  *    ArrayList(类)
  */
 import java.util.ArrayList;
+import java.util.Iterator;
 
 import com.scxh.java1601.object.ex01.test.Student;
 
@@ -20,23 +21,25 @@ public class ArrayListDemo {
 		System.out.println("=======添加学生信息成功=============");
 		demo.addStudents();
 		demo.findAllStudent();
+		System.out.println("=======findAllStudentByIterator=============");
+		demo.findAllStudentByIterator();
 		
-		System.out.println("=======根据ID查找学生信息=============");
-		int studentId = 111;
-		Student student = demo.findStudentById(studentId);
-		System.out.println("编号为" + studentId + "的学生信息是 :" + student);
-		
-		System.out.println("=======根据姓名更改学生信息=============");
-		demo.updateStudentByName("张三","张小三","男");
-		demo.findAllStudent();
-		
-		System.out.println("=======移除学生信息=============");
-		demo.removeStudent(student);
-		demo.findAllStudent();
-		
-		System.out.println("=======移除学生麻0信息=============");
-		demo.removeStudent("麻0");
-		demo.findAllStudent();
+//		System.out.println("=======根据ID查找学生信息=============");
+//		int studentId = 111;
+//		Student student = demo.findStudentById(studentId);
+//		System.out.println("编号为" + studentId + "的学生信息是 :" + student);
+//		
+//		System.out.println("=======根据姓名更改学生信息=============");
+//		demo.updateStudentByName("张三","张小三","男");
+//		demo.findAllStudent();
+//		
+//		System.out.println("=======移除学生信息=============");
+//		demo.removeStudent(student);
+//		demo.findAllStudent();
+//		
+//		System.out.println("=======移除学生麻0信息=============");
+//		demo.removeStudent("麻0");
+//		demo.findAllStudent();
 	}
 
 	/**
@@ -74,6 +77,14 @@ public class ArrayListDemo {
 		for (int i = 0; i < size; i++) {
 			Student student = studentLists.get(i);
 			System.out.println(student);// 显示学生对象信息
+		}
+	}
+	
+	public void findAllStudentByIterator(){
+		Iterator<Student> iterator = studentLists.iterator();	
+		while(iterator.hasNext()){
+			Student student= iterator.next();
+			System.out.println(student);
 		}
 	}
 
