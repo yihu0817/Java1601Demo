@@ -1,10 +1,10 @@
 package com.scxh.java1601.object.ex01.test;
 
 public class Student {
-	 String name; // 姓名
-	 int age; // 年龄
-	 int id; // 编号
-	 String sex; // 性别
+	public String name; // 姓名
+	public int age; // 年龄
+	public int id; // 编号
+	public String sex; // 性别
 
 	public Student(){
 		
